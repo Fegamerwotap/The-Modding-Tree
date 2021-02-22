@@ -1,15 +1,15 @@
 addLayer("p", {
-    name: "matheusdoença", // This is optional, only used in a few places, If absent it just uses the layer id.
-    symbol: "P", // This appears on the layer's node. Default is the id with the first letter capitalized
+    name: "matheusdoenza", // This is optional, only used in a few places, If absent it just uses the layer id.
+    symbol: "MD", // This appears on the layer's node. Default is the id with the first letter capitalized
     position: 0, // Horizontal position within a row. By default it uses the layer id and sorts in alphabetical order
     startData() { return {
         unlocked: true,
 		points: new Decimal(0),
     }},
-    color: "#4BDC13",
-    requires: new Decimal(10), // Can be a function that takes requirement increases into account
-    resource: "prestige points", // Name of prestige currency
-    baseResource: "points", // Name of resource prestige is based on
+    color: "#00eeff",
+    requires: new Decimal(6), // Can be a function that takes requirement increases into account
+    resource: "matheusdoenza", // Name of prestige currency
+    baseResource: "fernandods", // Name of resource prestige is based on
     baseAmount() {return player.points}, // Get the current amount of baseResource
     type: "normal", // normal: cost to gain currency depends on amount gained. static: cost depends on how much you already have
     exponent: 0.5, // Prestige currency exponent
@@ -26,3 +26,29 @@ addLayer("p", {
     ],
     layerShown(){return true}
 })
+addLayer('T', {
+name: "théo doença",
+symbol: "TD",
+position: 1,
+startData() {return {
+unlocked: true,
+points: new Decimal(0),
+}},
+color: "#00ffd",
+requires:new decimal(30),
+resource:"téu doença",
+baseresource:"fernandods",
+baseAmount() {return player.points},
+type: normal,
+exponent: 2,
+gainMult() },
+   mult = new decimal(10),
+   return mult
+},
+gainExp() }
+return new decima(2)
+},
+row: 0,
+hotkeys: [
+    key: "T", description:"T: restaura os fernandods porem duplica eles futuramente", onpress({if (canReset(this.layer)) doReset(this.layer)})
+
