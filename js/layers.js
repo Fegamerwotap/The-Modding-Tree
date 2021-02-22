@@ -7,7 +7,7 @@ addLayer("p", {
 		points: new Decimal(0),
     }},
     color: "#00eeff",
-    requires: new Decimal(6), // Can be a function that takes requirement increases into account
+    requires: new Decimal(2), // Can be a function that takes requirement increases into account
     resource: "matheusdoenza", // Name of prestige currency
     baseResource: "fernandods", // Name of resource prestige is based on
     baseAmount() {return player.points}, // Get the current amount of baseResource
@@ -26,29 +26,3 @@ addLayer("p", {
     ],
     layerShown(){return true}
 })
-addLayer('T', {
-name: "théo doença",
-symbol: "TD",
-position: 1,
-startData() {return {
-unlocked: true,
-points: new Decimal(0),
-}},
-color: "#00ffd",
-requires:new decimal(30),
-resource:"téu doença",
-baseresource:"fernandods",
-baseAmount() {return player.points},
-type: normal,
-exponent: 2,
-gainMult() },
-   mult = new decimal(10),
-   return mult
-},
-gainExp() }
-return new decima(2)
-},
-row: 0,
-hotkeys: [
-    key: "T", description:"T: restaura os fernandods porem duplica eles futuramente", onpress({if (canReset(this.layer)) doReset(this.layer)})
-
